@@ -1,8 +1,8 @@
 // Set up the headers for the request
 const myHeaders = new Headers();
-myHeaders.append("x-apihub-key", "cHpftkS3cyvdnlg9KiPeoqraMWu8WQ-MrWK7U4-HgbSC5DHfS8");
+myHeaders.append("x-apihub-key", "YJ7t94uQbLJhD1uetghf5YfQFCXQU2DsPaNDFgrdXyMVNznosS");
 myHeaders.append("x-apihub-host", "Movies-Verse.allthingsdev.co");
-myHeaders.append("x-apihub-endpoint", "5122e0f8-a949-45a9-aedf-5eaf61c6085b");
+myHeaders.append("x-apihub-endpoint", "611cdfda-546d-4cc9-91ab-bfdac3194613");
 
 // Configure the request options
 const requestOptions = {
@@ -12,10 +12,10 @@ const requestOptions = {
 };
 
 // Fetching the data from the API
-fetch("https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/top-box-office", requestOptions)
+fetch("https://Movies-Verse.proxy-production.allthingsdev.co/api/movies/most-popular-movies", requestOptions)
    .then((response) => {
       if (!response.ok) {
-         throw new Error('Network response was not ok ' + response.statusText);
+         throw new Error('Network response was not ok' + response.statusText);
       }
       return response.json(); // Parse response as JSON
    })
